@@ -2461,7 +2461,7 @@ if (checkoutForm) {
 
                 const respuesta =
                     await fetch(
-                        "http://https://urban-street.onrender.com//crear-preferencia",
+                        "https://urban-street.onrender.com/crear-preferencia",
                         {
 
                             method:
