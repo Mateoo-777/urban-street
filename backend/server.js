@@ -35,12 +35,16 @@ dotenv.config();
 // ==========================================
 
 const serviceAccount =
-    JSON.parse(
-        readFileSync(
-            "./firebase-admin.json",
-            "utf8"
+    process.env.FIREBASE_SERVICE_ACCOUNT
+        ? JSON.parse(
+            process.env.FIREBASE_SERVICE_ACCOUNT
         )
-    );
+        : JSON.parse(
+            readFileSync(
+                "./firebase-admin.json",
+                "utf8"
+            )
+        );
 
 
 initializeApp({
@@ -73,9 +77,12 @@ const app =
 app.use(
     cors({
         origin: [
-            "http://127.0.0.1:5500",
-            "http://localhost:5500"
-        ],
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+    "https://urbanstreetag.lat",
+    "https://www.urbanstreetag.lat",
+    "https://mateoo-777.github.io"
+],
 
         methods: [
             "GET",
