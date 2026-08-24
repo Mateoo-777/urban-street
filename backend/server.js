@@ -34,6 +34,10 @@ dotenv.config();
 // FIREBASE ADMIN
 // ==========================================
 
+// ==========================================
+// FIREBASE ADMIN
+// ==========================================
+
 const serviceAccount =
     process.env.FIREBASE_SERVICE_ACCOUNT
         ? JSON.parse(
