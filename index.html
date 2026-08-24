@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Urban Street - Zapatillas urbanas, ediciones limitadas y los mejores modelos streetwear."
+    >
+
+    <title>Urban Street | Sneakers & Streetwear</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                URBAN<span>STREET</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#inicio">Inicio</a>
+
+                <a href="#productos">Zapatillas</a>
+
+                <a href="#novedades">Novedades</a>
+
+                <a href="#contacto">Contacto</a>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar sneakers..."
+                    aria-label="Buscar productos"
+                >
+
+            </div>
+
+
+            <!-- CARRITO -->
+
+            <button
+                id="abrir-carrito"
+                class="cart-button"
+                aria-label="Abrir carrito"
+            >
+
+                🛒
+
+                <span id="contador-carrito">
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                id="menu-mobile"
+                class="menu-mobile"
+                aria-label="Abrir menú"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    NUEVA COLECCIÓN 2026
+                </p>
+
+                <h1>
+                    PISÁ FUERTE.<br>
+                    <span>ROMPÉ LAS REGLAS.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Sneakers seleccionadas para quienes
+                    no siguen tendencias: las crean.
+                </p>
+
+                <a href="#productos" class="hero-button">
+                    Comprar ahora →
+                </a>
+
+            </div>
+
+            <div class="hero-number">
+                01 / STREET CULTURE
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BARRA DE BENEFICIOS
+        ========================== -->
+
+        <section class="beneficios">
+
+            <div>
+                <strong>ENVÍOS</strong>
+                <span>A todo el país</span>
+            </div>
+
+            <div>
+                <strong>PRODUCTOS</strong>
+                <span>100% originales</span>
+            </div>
+
+            <div>
+                <strong>PAGOS</strong>
+                <span>Compra segura</span>
+            </div>
+
+            <div>
+                <strong>DROP</strong>
+                <span>Nuevos modelos</span>
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+        <section
+            class="productos-section"
+            id="productos"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="section-small">
+                        STREET SELECTION
+                    </p>
+
+                    <h2>
+                        ÚLTIMOS DROPS
+                    </h2>
+
+                </div>
+
+                <p>
+                    Los modelos más buscados de la cultura sneaker.
+                </p>
+
+            </div>
+
+            <!-- ========================================
+     FILTROS
+========================================= -->
+
+<div class="filtros">
+
+    <div class="filtro">
+
+        <label for="filtro-marca">
+            Marca
+        </label>
+
+        <select id="filtro-marca">
+
+            <option value="">
+                Todas
+            </option>
+
+            <option value="Nike">
+                Nike
+            </option>
+
+            <option value="Adidas">
+                Adidas
+            </option>
+
+            <option value="Jordan">
+                Jordan
+            </option>
+
+            <option value="New Balance">
+                New Balance
+            </option>
+
+            <option value="Puma">
+                Puma
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="filtro">
+
+        <label for="filtro-talle">
+            Talle
+        </label>
+
+        <select id="filtro-talle">
+
+            <option value="">
+                Todos
+            </option>
+
+            <option value="39">39</option>
+
+            <option value="40">40</option>
+
+            <option value="41">41</option>
+
+            <option value="42">42</option>
+
+            <option value="43">43</option>
+
+            <option value="44">44</option>
+
+        </select>
+
+    </div>
+
+
+    <div class="filtro">
+
+        <label for="filtro-estado">
+            Estado
+        </label>
+
+        <select id="filtro-estado">
+
+            <option value="">
+                Todos
+            </option>
+
+            <option value="NUEVO">
+                Nuevo
+            </option>
+
+            <option value="EDICIÓN LIMITADA">
+                Edición limitada
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="filtro">
+
+        <label for="orden-productos">
+            Ordenar
+        </label>
+
+        <select id="orden-productos">
+
+            <option value="">
+                Predeterminado
+            </option>
+
+            <option value="menor-precio">
+                Menor precio
+            </option>
+
+            <option value="mayor-precio">
+                Mayor precio
+            </option>
+
+            <option value="nombre">
+                Nombre A-Z
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <button
+        id="limpiar-filtros"
+        class="btn-limpiar-filtros"
+    >
+        Limpiar
+    </button>
+
+</div>
+
+            <div
+                class="productos-grid"
+                id="productos-grid"
+            >
+
+                <!-- Los productos se generan con JavaScript -->
+
+            </div>
+
+
+            <p
+                id="sin-resultados"
+                class="sin-resultados"
+            >
+                No encontramos zapatillas con ese nombre.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             BANNER
+        ========================== -->
+
+        <section
+            class="street-banner"
+            id="novedades"
+        >
+
+            <div class="banner-content">
+
+                <p>LIMITED DROP</p>
+
+                <h2>
+                    NO SIGAS<br>
+                    EL <span>HYPE.</span>
+                </h2>
+
+                <p class="banner-text">
+                    Crealo.
+                </p>
+
+                <a href="#productos">
+                    VER COLECCIÓN
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             NEWSLETTER
+        ========================== -->
+
+        <section class="newsletter">
+
+            <div>
+
+                <p class="section-small">
+                    URBAN COMMUNITY
+                </p>
+
+                <h2>
+                    ENTERATE ANTES<br>
+                    QUE NADIE.
+                </h2>
+
+            </div>
+
+
+            <form id="newsletter-form">
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="tuemail@gmail.com"
+                    required
+                >
+
+                <button type="submit">
+                    SUSCRIBIRME →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="contacto">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo">
+                    URBAN<span>STREET</span>
+                </a>
+
+                <p>
+                    Sneakers. Streetwear.<br>
+                    Cultura urbana.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>TIENDA</h3>
+
+                <a href="#productos">Sneakers</a>
+                <a href="#productos">Novedades</a>
+                <a href="#productos">Ediciones limitadas</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>AYUDA</h3>
+
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Envíos</a>
+                <a href="#">Cambios y devoluciones</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>LEGAL</h3>
+
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Privacidad</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>SEGUINOS</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">X / Twitter</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Urban Street.
+                Todos los derechos reservados.
+            </p>
+
+            <p>
+                ARGENTINA 🇦🇷
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         FONDO DEL CARRITO
+    ========================== -->
+
+    <div
+        id="carrito-overlay"
+        class="carrito-overlay"
+    ></div>
+
+
+
+    <!-- =========================
+         CARRITO LATERAL
+    ========================== -->
+
+    <aside
+        id="carrito"
+        class="carrito-sidebar"
+    >
+
+        <div class="carrito-header">
+
+            <div>
+
+                <p class="section-small">
+                    TU COMPRA
+                </p>
+
+                <h2>
+                    CARRITO
+                </h2>
+
+            </div>
+
+            <button
+                id="cerrar-carrito"
+                class="cerrar-carrito"
+                aria-label="Cerrar carrito"
+            >
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            id="carrito-productos"
+            class="carrito-productos"
+        >
+
+            <!-- Productos agregados -->
+
+        </div>
+
+
+        <div
+            id="carrito-vacio"
+            class="carrito-vacio"
+        >
+
+            <span>👟</span>
+
+            <h3>
+                Tu carrito está vacío
+            </h3>
+
+            <p>
+                Agregá unas sneakers y empezá tu colección.
+            </p>
+
+        </div>
+
+        <div class="cupon-container">
+
+    <p>Código de promoción</p>
+
+    <div class="cupon-form">
+
+        <input
+            type="text"
+            id="codigo-promocion"
+            placeholder="URBAN10"
+        >
+
+        <button id="aplicar-codigo">
+            Aplicar
+        </button>
+
+    </div>
+
+    <p id="mensaje-codigo"></p>
+
+</div>
+
+
+<div
+    id="descuento-container"
+    class="descuento-container"
+    style="display: none;"
+>
+
+    <span>Descuento</span>
+
+    <strong id="descuento-total">
+        -$0
+    </strong>
+
+</div>
+
+
+        <div class="carrito-footer">
+
+            <div class="total">
+
+                <span>TOTAL</span>
+
+                <strong id="carrito-total">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <div class="botones-compra">
+
+    <button id="btn-whatsapp">
+        PEDIR POR WHATSAPP
+    </button>
+
+    <button id="btn-mercadopago">
+        PAGAR CON MERCADO PAGO
+    </button>
+
+</div>
+
+
+            <p>
+                Impuestos y envío calculados al finalizar.
+            </p>
+
+        </div>
+
+    </aside>
+
+    <!-- =========================================
+     CHECKOUT
+========================================= -->
+
+<div
+    id="checkout-overlay"
+    class="checkout-overlay"
+></div>
+
+
+<section
+    id="checkout-modal"
+    class="checkout-modal"
+>
+
+    <div class="checkout-header">
+
+        <div>
+            <p class="section-small">
+                FINALIZAR COMPRA
+            </p>
+
+            <h2>DATOS DE ENTREGA</h2>
+        </div>
+
+        <button
+            type="button"
+            id="cerrar-checkout"
+            class="cerrar-checkout"
+        >
+            ✕
+        </button>
+
+    </div>
+
+
+    <form id="checkout-form">
+
+        <!-- ==============================
+             DATOS PERSONALES
+        =============================== -->
+
+        <div class="checkout-bloque">
+
+            <h3>1. Tus datos</h3>
+
+            <label for="checkout-nombre">
+                Nombre y apellido
+            </label>
+
+            <input
+                type="text"
+                id="checkout-nombre"
+                required
+            >
+
+
+            <label for="checkout-telefono">
+                WhatsApp
+            </label>
+
+            <input
+                type="tel"
+                id="checkout-telefono"
+                placeholder="351..."
+                required
+            >
+
+
+            <label for="checkout-email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="checkout-email"
+                required
+            >
+
+        </div>
+
+
+        <!-- ==============================
+             ENTREGA
+        =============================== -->
+
+        <div class="checkout-bloque">
+
+            <h3>2. Entrega</h3>
+
+
+            <label class="opcion-entrega">
+
+                <input
+                    type="radio"
+                    name="tipo-entrega"
+                    value="retiro"
+                    checked
+                >
+
+                <div>
+                    <strong>
+                        Retiro
+                    </strong>
+
+                    <span>
+                        Gratis
+                    </span>
+                </div>
+
+            </label>
+
+
+            <label class="opcion-entrega">
+
+                <input
+                    type="radio"
+                    name="tipo-entrega"
+                    value="envio"
+                >
+
+                <div>
+                    <strong>
+                        Envío a domicilio
+                    </strong>
+
+                    <span>
+                        Se calcula según ubicación
+                    </span>
+                </div>
+
+            </label>
+
+        </div>
+
+
+        <!-- ==============================
+             DIRECCIÓN
+        =============================== -->
+
+        <div
+            id="datos-envio"
+            class="checkout-bloque"
+            style="display: none;"
+        >
+
+            <h3>3. Dirección</h3>
+
+
+            <label for="checkout-provincia">
+                Provincia
+            </label>
+
+            <select id="checkout-provincia">
+
+                <option value="">
+                    Seleccionar
+                </option>
+
+                <option value="Cordoba">
+                    Córdoba
+                </option>
+
+                <option value="Buenos Aires">
+                    Buenos Aires
+                </option>
+
+                <option value="Santa Fe">
+                    Santa Fe
+                </option>
+
+                <option value="Otra">
+                    Otra provincia
+                </option>
+
+            </select>
+
+
+            <label for="checkout-localidad">
+                Localidad
+            </label>
+
+            <input
+                type="text"
+                id="checkout-localidad"
+            >
+
+
+            <label for="checkout-direccion">
+                Dirección
+            </label>
+
+            <input
+                type="text"
+                id="checkout-direccion"
+                placeholder="Calle 123"
+            >
+
+
+            <label for="checkout-cp">
+                Código postal
+            </label>
+
+            <input
+                type="text"
+                id="checkout-cp"
+            >
+
+        </div>
+
+
+        <!-- ==============================
+             RESUMEN
+        =============================== -->
+
+        <div class="checkout-resumen">
+
+            <h3>Resumen</h3>
+
+
+            <div>
+                <span>Productos</span>
+
+                <span id="checkout-subtotal">
+                    $0
+                </span>
+            </div>
+
+
+            <div
+                id="checkout-descuento-fila"
+                style="display: none;"
+            >
+                <span>Descuento</span>
+
+                <span id="checkout-descuento">
+                    -$0
+                </span>
+            </div>
+
+
+            <div>
+                <span>Envío</span>
+
+                <span id="checkout-envio">
+                    GRATIS
+                </span>
+            </div>
+
+
+            <div class="checkout-total">
+
+                <strong>TOTAL</strong>
+
+                <strong id="checkout-total">
+                    $0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn-continuar-pago"
+        >
+            CONTINUAR A MERCADO PAGO →
+        </button>
+
+    </form>
+
+</section>
+
+
+    <div
+        id="notificacion"
+        class="notificacion"
+    >
+        Producto agregado al carrito ✓
+    </div>
+    
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

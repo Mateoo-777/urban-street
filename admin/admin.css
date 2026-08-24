@@ -1,0 +1,736 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0d0d0d;
+
+    color: white;
+}
+
+
+.admin {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+
+h1 {
+    font-size: 40px;
+
+    margin-bottom: 5px;
+}
+
+
+h1 span {
+    color: #00ff66;
+}
+
+
+.subtitulo {
+    color: #888;
+
+    margin-bottom: 40px;
+}
+
+
+form {
+    background: #171717;
+
+    padding: 30px;
+
+    border: 1px solid #292929;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+label {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+input,
+select {
+    padding: 14px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #00ff66;
+}
+
+
+.opciones {
+    display: flex;
+
+    gap: 30px;
+
+    margin: 10px 0;
+}
+
+
+button {
+    padding: 15px;
+
+    background: #00ff66;
+
+    color: black;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: white;
+}
+
+
+#mensaje {
+    text-align: center;
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+
+.producto-admin {
+    display: grid;
+
+    grid-template-columns: 100px 1fr auto;
+
+    gap: 20px;
+
+    align-items: center;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.producto-admin img {
+    width: 100px;
+
+    height: 100px;
+
+    object-fit: cover;
+
+    background: white;
+}
+
+
+.producto-admin h3 {
+    margin: 0 0 7px;
+}
+
+
+.producto-admin p {
+    margin: 5px 0;
+
+    color: #aaa;
+}
+
+
+.btn-eliminar {
+    background: #ff3535;
+
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+    .producto-admin {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+#imagen {
+    background: #0d0d0d;
+    color: white;
+    padding: 12px;
+}
+
+
+#preview-container {
+    display: none;
+
+    margin-top: 10px;
+}
+
+
+#preview-imagen {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border: 1px solid #333;
+}
+
+.talles-admin {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+}
+
+
+.talles-admin div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.talles-admin input {
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .talles-admin {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.producto-talles {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin: 15px 0;
+}
+
+
+.talle-btn {
+    min-width: 38px;
+
+    padding: 8px;
+
+    background: #111;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+
+.talle-btn:hover {
+    border-color: #00ff66;
+}
+
+
+.talle-btn.seleccionado {
+    background: #00ff66;
+
+    color: black;
+
+    border-color: #00ff66;
+}
+
+
+.btn-agregar {
+    width: auto;
+
+    padding: 0 18px;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    padding: 35px;
+}
+
+
+.login-box h1 {
+    margin-top: 0;
+}
+
+
+.login-box p {
+    color: #888;
+}
+
+
+.login-box form {
+    padding: 0;
+
+    border: none;
+
+    margin-top: 30px;
+}
+
+
+#panel-admin {
+    display: none;
+}
+
+
+.cerrar-sesion {
+    background: #222;
+
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+
+.cerrar-sesion:hover {
+    background: #ff4141;
+
+    color: white;
+}
+
+
+#login-mensaje {
+    color: #ff5555;
+
+    text-align: center;
+}
+
+.admin-promociones {
+    margin-top: 70px;
+}
+
+
+.codigo-admin {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    padding: 20px;
+
+    margin-top: 15px;
+}
+
+
+.codigo-admin strong {
+    color: #00ff66;
+
+    font-size: 20px;
+}
+
+
+.codigo-admin p {
+    margin: 6px 0;
+
+    color: #aaa;
+}
+
+
+.eliminar-codigo {
+    background: #ff4141;
+
+    color: white;
+}
+
+/* =========================================
+   PEDIDOS ADMIN
+========================================= */
+
+.admin-pedidos {
+    margin-top: 80px;
+}
+
+
+.pedidos-titulo {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 25px;
+}
+
+
+.pedidos-titulo h2 {
+    font-size: 35px;
+
+    margin: 0;
+}
+
+
+#contador-pedidos {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+
+/* FILTROS */
+
+.filtros-pedidos {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.filtros-pedidos select {
+    flex: 1;
+
+    padding: 12px;
+
+    background: #171717;
+
+    color: white;
+
+    border: 1px solid #333;
+}
+
+
+
+/* TARJETA PEDIDO */
+
+.pedido-admin {
+    background: #151515;
+
+    border: 1px solid #292929;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+
+.pedido-cabecera {
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.pedido-codigo {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.pedido-fecha {
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+.pedido-estados {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+
+/* ESTADOS */
+
+.estado-pago,
+.estado-pedido {
+    padding: 7px 10px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+.pago-pendiente {
+    background: #ffbe33;
+
+    color: black;
+}
+
+
+.pago-aprobado {
+    background: #00ff66;
+
+    color: black;
+}
+
+
+.pago-rechazado {
+    background: #ff4040;
+
+    color: white;
+}
+
+
+.pedido-nuevo {
+    background: #333;
+
+    color: white;
+}
+
+
+.pedido-preparando {
+    background: #2979ff;
+
+    color: white;
+}
+
+
+.pedido-enviado {
+    background: #9c5cff;
+
+    color: white;
+}
+
+
+.pedido-entregado {
+    background: #00ff66;
+
+    color: black;
+}
+
+
+.pedido-cancelado {
+    background: #ff4040;
+
+    color: white;
+}
+
+
+
+/* INFORMACIÓN */
+
+.pedido-contenido {
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+.pedido-seccion h4 {
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+    color: #00ff66;
+}
+
+
+.pedido-seccion p {
+    margin: 7px 0;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+
+/* PRODUCTOS */
+
+.producto-pedido {
+    padding: 12px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.producto-pedido:last-child {
+    border-bottom: none;
+}
+
+
+.producto-pedido strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+
+/* TOTALES */
+
+.pedido-totales {
+    padding: 20px;
+
+    background: #0d0d0d;
+}
+
+
+.pedido-total-fila {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 8px 0;
+
+    color: #aaa;
+}
+
+
+.pedido-total-final {
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #333;
+
+    font-size: 20px;
+
+    color: white;
+}
+
+
+
+/* ACCIONES */
+
+.pedido-acciones {
+    padding: 20px;
+
+    border-top: 1px solid #292929;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.pedido-acciones label {
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+.pedido-acciones select {
+    flex: 1;
+
+    padding: 12px;
+
+    background: #0d0d0d;
+
+    color: white;
+
+    border: 1px solid #333;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .pedido-contenido {
+        grid-template-columns: 1fr;
+    }
+
+
+    .pedido-cabecera {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .filtros-pedidos {
+        flex-direction: column;
+    }
+
+
+    .pedido-acciones {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+}

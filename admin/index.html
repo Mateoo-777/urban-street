@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Street | Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div id="login-container" class="login-container">
+
+    <div class="login-box">
+
+        <h1>
+            URBAN <span>STREET</span>
+        </h1>
+
+        <p>
+            Panel de administración
+        </p>
+
+        <form id="login-form">
+
+            <input
+                type="email"
+                id="login-email"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="password"
+                id="login-password"
+                placeholder="Contraseña"
+                required
+            >
+
+            <button type="submit">
+                INICIAR SESIÓN
+            </button>
+
+            <p id="login-mensaje"></p>
+
+        </form>
+
+    </div>
+
+</div>
+<main class="admin" id="panel-admin">
+
+        <h1>
+            URBAN <span>STREET</span>
+        </h1>
+
+        <button id="cerrar-sesion" class="cerrar-sesion">
+    Cerrar sesión
+</button>
+
+        <p class="subtitulo">
+            Panel de administración
+        </p>
+
+
+        <form id="form-producto">
+
+            <label>
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Air Jordan 1 High"
+                required
+            >
+
+
+            <label>
+                Marca
+            </label>
+
+            <input
+                type="text"
+                id="marca"
+                placeholder="Nike"
+                required
+            >
+
+
+            <label>
+                Precio
+            </label>
+
+            <input
+                type="number"
+                id="precio"
+                placeholder="249999"
+                required
+            >
+
+
+ <label>
+    Talles y stock
+</label>
+
+<div class="talles-admin">
+
+    <div>
+        <label>Talle 39</label>
+        <input
+            type="number"
+            id="talle39"
+            min="0"
+            value="0"
+        >
+    </div>
+
+
+    <div>
+        <label>Talle 40</label>
+        <input
+            type="number"
+            id="talle40"
+            min="0"
+            value="0"
+        >
+    </div>
+
+
+    <div>
+        <label>Talle 41</label>
+        <input
+            type="number"
+            id="talle41"
+            min="0"
+            value="0"
+        >
+    </div>
+
+
+    <div>
+        <label>Talle 42</label>
+        <input
+            type="number"
+            id="talle42"
+            min="0"
+            value="0"
+        >
+    </div>
+
+
+    <div>
+        <label>Talle 43</label>
+        <input
+            type="number"
+            id="talle43"
+            min="0"
+            value="0"
+        >
+    </div>
+
+
+    <div>
+        <label>Talle 44</label>
+        <input
+            type="number"
+            id="talle44"
+            min="0"
+            value="0"
+        >
+    </div>
+
+</div>
+            <label>
+                Estado
+            </label>
+
+            <select id="estado">
+
+                <option value="NUEVO">
+                    Nuevo
+                </option>
+
+                <option value="EDICIÓN LIMITADA">
+                    Edición limitada
+                </option>
+
+                <option value="">
+                    Sin etiqueta
+                </option>
+
+            </select>
+
+
+           <label>
+    Imagen del producto
+</label>
+
+<input
+    type="file"
+    id="imagen"
+    accept="image/*"
+    required
+>
+
+<div id="preview-container">
+
+    <img
+        id="preview-imagen"
+        alt="Vista previa"
+    >
+
+</div>
+
+
+            <div class="opciones">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="destacado"
+                    >
+
+                    Destacado
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="visible"
+                        checked
+                    >
+
+                    Visible
+
+                </label>
+
+            </div>
+
+
+            <button type="submit">
+                AGREGAR PRODUCTO
+            </button>
+
+
+            <p id="mensaje"></p>
+
+        </form>
+
+
+        <section>
+
+            <h2>
+                Productos
+            </h2>
+
+            <div id="lista-productos"></div>
+
+        </section>
+
+    </main>
+
+    <section class="admin-promociones">
+
+    <h2>
+        Códigos promocionales
+    </h2>
+
+
+    <form id="form-codigo">
+
+        <label>
+            Código
+        </label>
+
+        <input
+            type="text"
+            id="codigo-nombre"
+            placeholder="URBAN10"
+            required
+        >
+
+
+        <label>
+            Tipo de descuento
+        </label>
+
+        <select id="codigo-tipo">
+
+            <option value="porcentaje">
+                Porcentaje
+            </option>
+
+            <option value="fijo">
+                Monto fijo
+            </option>
+
+        </select>
+
+        <label>
+            Valor
+        </label>
+
+        <input
+            type="number"
+            id="codigo-valor"
+            placeholder="10"
+            min="1"
+            required
+        >
+
+
+        <label>
+
+            <input
+                type="checkbox"
+                id="codigo-activo"
+                checked
+            >
+
+            Código activo
+
+        </label>
+
+        <label>
+    <input
+        type="checkbox"
+        id="codigo-uso-unico"
+    >
+
+    Código de un solo uso
+</label>
+
+        <button type="submit">
+            CREAR CÓDIGO
+        </button>
+
+
+        <p id="mensaje-codigo-admin"></p>
+
+    </form>
+
+
+    <div id="lista-codigos"></div>
+
+</section>
+
+<div class="pedido-contacto">
+
+    <a
+        href="https://wa.me/543513239154${
+            String(
+                pedido.cliente?.telefono || ""
+            )
+            .replace(/\D/g, "")
+        }?text=${encodeURIComponent(
+            `Hola ${pedido.cliente?.nombre || ""}! Te contactamos de Urban Street por tu pedido ${pedido.codigo || pedido.id}.`
+        )}"
+        target="_blank"
+        class="btn-whatsapp-admin"
+    >
+        💬 Contactar por WhatsApp
+    </a>
+
+</div>
+
+ <!-- =========================================
+     PEDIDOS
+========================================= -->
+
+<section class="admin-pedidos">
+
+    <div class="pedidos-titulo">
+
+        <div>
+            <p class="section-small">
+                URBAN STREET
+            </p>
+
+            <h2>
+                PEDIDOS
+            </h2>
+        </div>
+
+        <span id="contador-pedidos">
+            0 pedidos
+        </span>
+
+    </div>
+
+
+    <!-- FILTROS -->
+
+    <div class="filtros-pedidos">
+
+        <select id="filtro-pago-admin">
+
+            <option value="">
+                Todos los pagos
+            </option>
+
+            <option value="pendiente">
+                Pendientes
+            </option>
+
+            <option value="aprobado">
+                Pagados
+            </option>
+
+            <option value="rechazado">
+                Rechazados
+            </option>
+
+        </select>
+
+
+        <select id="filtro-pedido-admin">
+
+            <option value="">
+                Todos los pedidos
+            </option>
+
+            <option value="nuevo">
+                Nuevos
+            </option>
+
+            <option value="preparando">
+                Preparando
+            </option>
+
+            <option value="enviado">
+                Enviados
+            </option>
+
+            <option value="entregado">
+                Entregados
+            </option>
+
+            <option value="cancelado">
+                Cancelados
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div id="lista-pedidos">
+
+        <p>
+            Cargando pedidos...
+        </p>
+
+    </div>
+
+</section>
+    <script
+        type="module"
+        src="admin.js">
+    </script>
+
+</body>
+
+</html>
