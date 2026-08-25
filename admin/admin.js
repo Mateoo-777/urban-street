@@ -1798,7 +1798,41 @@ function mostrarPedidos(lista) {
                             Cancelado
                         </option>
 
-                    </select>
+                                        </select>
+
+
+                    <div class="pedido-botones-admin">
+
+                        ${
+                            estadoPago !== "aprobado"
+                                ? `
+                                    <button
+                                        class="btn-aprobar-pago"
+                                        data-id="${pedido.id}"
+                                    >
+                                        ✅ Marcar pago aprobado
+                                    </button>
+                                `
+                                : `
+                                    <button
+                                        class="btn-aprobar-pago"
+                                        disabled
+                                    >
+                                        ✅ Pago aprobado
+                                    </button>
+                                `
+                        }
+
+
+                        <button
+                            class="btn-eliminar-pedido"
+                            data-id="${pedido.id}"
+                        >
+                            🗑️ Eliminar pedido
+                        </button>
+
+                    </div>
+
 
                 </div>
 
@@ -1814,6 +1848,8 @@ function mostrarPedidos(lista) {
 
 
     activarCambioEstadoPedidos();
+activarAprobarPagos();
+activarEliminarPedidos();
 
 }
 
@@ -1873,6 +1909,182 @@ function activarCambioEstadoPedidos() {
 
                         alert(
                             "No se pudo actualizar el pedido."
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+}
+
+// ==========================================
+// MARCAR PAGO COMO APROBADO
+// ==========================================
+
+function activarAprobarPagos() {
+
+    const botones =
+        document.querySelectorAll(
+            ".btn-aprobar-pago[data-id]"
+        );
+
+
+    botones.forEach(
+        boton => {
+
+            boton.addEventListener(
+                "click",
+
+                async function() {
+
+                    const pedidoId =
+                        boton.dataset.id;
+
+
+                    const confirmar =
+                        confirm(
+                            "¿Confirmaste en Mercado Pago que este pago fue acreditado?"
+                        );
+
+
+                    if (!confirmar) {
+                        return;
+                    }
+
+
+                    try {
+
+                        boton.disabled = true;
+
+                        boton.textContent =
+                            "Actualizando...";
+
+
+                        await updateDoc(
+
+                            doc(
+                                db,
+                                "pedidos",
+                                pedidoId
+                            ),
+
+                            {
+                                estadoPago:
+                                    "aprobado",
+
+                                pagoConfirmadoManual:
+                                    true,
+
+                                pagoConfirmadoEn:
+                                    new Date()
+                            }
+
+                        );
+
+
+                    } catch (error) {
+
+                        console.error(
+                            "Error aprobando pago:",
+                            error
+                        );
+
+
+                        boton.disabled = false;
+
+                        boton.textContent =
+                            "✅ Marcar pago aprobado";
+
+
+                        alert(
+                            "No se pudo actualizar el pago."
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================
+// ELIMINAR PEDIDO
+// ==========================================
+
+function activarEliminarPedidos() {
+
+    const botones =
+        document.querySelectorAll(
+            ".btn-eliminar-pedido"
+        );
+
+
+    botones.forEach(
+        boton => {
+
+            boton.addEventListener(
+                "click",
+
+                async function() {
+
+                    const pedidoId =
+                        boton.dataset.id;
+
+
+                    const confirmar =
+                        confirm(
+                            "¿Seguro que querés eliminar este pedido? Esta acción no se puede deshacer."
+                        );
+
+
+                    if (!confirmar) {
+                        return;
+                    }
+
+
+                    try {
+
+                        boton.disabled = true;
+
+                        boton.textContent =
+                            "Eliminando...";
+
+
+                        await deleteDoc(
+
+                            doc(
+                                db,
+                                "pedidos",
+                                pedidoId
+                            )
+
+                        );
+
+
+                    } catch (error) {
+
+                        console.error(
+                            "Error eliminando pedido:",
+                            error
+                        );
+
+
+                        boton.disabled = false;
+
+                        boton.textContent =
+                            "🗑️ Eliminar pedido";
+
+
+                        alert(
+                            "No se pudo eliminar el pedido."
                         );
 
                     }
