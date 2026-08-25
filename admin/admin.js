@@ -809,6 +809,14 @@ formulario.addEventListener(
                     ),
 
 
+                disponibilidad:
+    document
+        .getElementById(
+            "disponibilidad"
+        )
+        .value,    
+
+
                 talles: {
 
                     "39":
@@ -1044,6 +1052,13 @@ onSnapshot(
                             )}
                         </p>
 
+                        <p>
+    ${
+        producto.disponibilidad === "encargo"
+            ? "📦 Por encargo - 3 a 7 días"
+            : "⚡ Stock inmediato"
+    }
+</p>
 
                         <p>
                             Talles:

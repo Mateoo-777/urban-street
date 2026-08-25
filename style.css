@@ -1995,3 +1995,27 @@ footer {
     }
 
 }
+
+.producto-disponibilidad{
+    margin:10px 0;
+}
+
+.producto-disponibilidad span{
+    display:block;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.producto-disponibilidad small{
+    display:block;
+    margin-top:4px;
+    font-size:12px;
+}
+
+.disponibilidad-encargo{
+    color:#d97706;
+}
+
+.disponibilidad-inmediato{
+    color:#15803d;
+}

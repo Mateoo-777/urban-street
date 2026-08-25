@@ -382,6 +382,28 @@ function mostrarProductos(lista) {
 
                     </h3>
 
+                    <div class="producto-disponibilidad">
+
+    ${
+        producto.disponibilidad === "encargo"
+            ? `
+                <span class="disponibilidad-encargo">
+                    📦 POR ENCARGO
+                </span>
+
+                <small>
+                    Disponible en depósito · Entrega estimada de 3 a 7 días
+                </small>
+            `
+            : `
+                <span class="disponibilidad-inmediato">
+                    ⚡ STOCK INMEDIATO
+                </span>
+            `
+    }
+
+</div>
+
 
                     <div class="producto-talles">
 
