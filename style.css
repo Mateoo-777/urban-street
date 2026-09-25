@@ -87,7 +87,7 @@ img {
 
 
 .logo span {
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -112,7 +112,7 @@ img {
 
 
 .nav-links a:hover {
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -140,7 +140,7 @@ img {
 
 
 .search-container input:focus {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -177,7 +177,7 @@ img {
 
     border-radius: 50%;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
@@ -249,7 +249,7 @@ img {
 
 .hero-small,
 .section-small {
-    color: #00ff66;
+    color: #e10600;
 
     font-size: 12px;
     font-weight: 900;
@@ -296,7 +296,7 @@ img {
 .hero-button {
     display: inline-block;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: #050505;
 
@@ -491,7 +491,7 @@ img {
     top: 15px;
     left: 15px;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: #050505;
 
@@ -556,7 +556,7 @@ img {
 
     border: none;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
@@ -615,7 +615,7 @@ img {
 
 
 .banner-content > p:first-child {
-    color: #00ff66;
+    color: #e10600;
 
     font-size: 12px;
 
@@ -637,7 +637,7 @@ img {
 
 
 .banner-content h2 span {
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -653,7 +653,7 @@ img {
 
     padding-bottom: 8px;
 
-    border-bottom: 2px solid #00ff66;
+    border-bottom: 2px solid #e10600;
 
     font-size: 13px;
 
@@ -721,7 +721,7 @@ img {
 
     border: none;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
@@ -791,7 +791,7 @@ footer {
 
 
 .footer-column a:hover {
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -904,9 +904,9 @@ footer {
 
 
 .cerrar-carrito:hover {
-    border-color: #00ff66;
+    border-color: #e10600;
 
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -950,7 +950,7 @@ footer {
 
 
 .carrito-item-precio {
-    color: #00ff66;
+    color: #e10600;
 
     font-weight: bold;
 
@@ -982,7 +982,7 @@ footer {
 
 
 .item-controles button:hover {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1069,7 +1069,7 @@ footer {
 
     border: none;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: #050505;
 
@@ -1108,7 +1108,7 @@ footer {
 
     transform: translate(-50%, 100px);
 
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
@@ -1337,16 +1337,16 @@ footer {
 
 
 .talle-btn:hover {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
 .talle-btn.seleccionado {
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1418,7 +1418,7 @@ footer {
 
 
 .filtro select:focus {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1438,11 +1438,11 @@ footer {
 
 
 .btn-limpiar-filtros:hover {
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1521,7 +1521,7 @@ footer {
 
 
 .cupon-form input:focus {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1530,7 +1530,7 @@ footer {
 
     border: none;
 
-    background: #00ff66;
+    background: #e10600;
 
     color: black;
 
@@ -1556,7 +1556,7 @@ footer {
 
     margin-bottom: 10px;
 
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -1597,7 +1597,7 @@ footer {
 
 
 #btn-whatsapp {
-    background: #00ff66;
+    background: #e10600;
     color: black;
 }
 
@@ -1816,7 +1816,7 @@ footer {
 .checkout-bloque h3 {
     margin-bottom: 10px;
 
-    color: #00ff66;
+    color: #e10600;
 }
 
 
@@ -1845,7 +1845,7 @@ footer {
 
 .checkout-bloque input:focus,
 .checkout-bloque select:focus {
-    border-color: #00ff66;
+    border-color: #e10600;
 }
 
 
@@ -1940,7 +1940,7 @@ footer {
 
     border: none;
 
-    background: #00ff66;
+    background: #e10600;
     color: #050505;
 
     font-weight: 900;
@@ -2017,5 +2017,288 @@ footer {
 }
 
 .disponibilidad-inmediato{
-    color:#15803d;
+    color:#e10600;
+}
+
+.community-whatsapp {
+    width: 500px;
+}
+
+.community-whatsapp p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    font-size: 15px;
+}
+
+.community-button {
+    display: inline-block;
+    padding: 18px 25px;
+
+    background: #e10600;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    transition: 0.2s;
+}
+
+.community-button:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   GUÍA DE TALLES
+========================================= */
+
+.producto-talles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.producto-talles-header > span {
+    font-size: 11px;
+    font-weight: bold;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+.abrir-guia-talles {
+    border: none;
+    background: transparent;
+
+    color: #e10600;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    padding: 0;
+}
+
+.abrir-guia-talles:hover {
+    color: white;
+}
+
+
+/* FONDO */
+
+.guia-talles-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    z-index: 5000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s;
+}
+
+.guia-talles-overlay.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* VENTANA */
+
+.guia-talles-modal {
+    position: relative;
+
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #111;
+
+    border: 1px solid #333;
+
+    padding: 35px;
+
+    color: white;
+}
+
+
+/* CERRAR */
+
+.cerrar-guia-talles {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+.cerrar-guia-talles:hover {
+    border-color: #e10600;
+    color: #e10600;
+}
+
+
+/* TITULOS */
+
+.guia-small {
+    color: #e10600;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.guia-talles-modal h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.guia-descripcion {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+
+/* TABLA */
+
+.tabla-talles {
+    border: 1px solid #292929;
+}
+
+.tabla-talles-header,
+.tabla-talles-fila {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    text-align: center;
+}
+
+.tabla-talles-header {
+    background: #e10600;
+
+    color: white;
+
+    font-weight: 900;
+}
+
+.tabla-talles-header span,
+.tabla-talles-fila span {
+    padding: 13px 8px;
+}
+
+.tabla-talles-fila {
+    border-top: 1px solid #292929;
+}
+
+.tabla-talles-fila:hover {
+    background: #1c1c1c;
+}
+
+.tabla-talles-fila span:first-child {
+    font-weight: 900;
+    color: #e10600;
+}
+
+
+/* COMO MEDIR */
+
+.como-medir {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #292929;
+}
+
+.como-medir h3 {
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.como-medir p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* AVISO */
+
+.aviso-talles {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-left: 3px solid #e10600;
+
+    background: #181818;
+}
+
+.aviso-talles strong {
+    color: #e10600;
+
+    font-size: 11px;
+}
+
+.aviso-talles p {
+    color: #aaa;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin-top: 6px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .guia-talles-modal {
+        padding: 28px 20px;
+    }
+
+    .guia-talles-modal h2 {
+        font-size: 28px;
+    }
+
+    .producto-talles-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
 }

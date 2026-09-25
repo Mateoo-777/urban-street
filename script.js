@@ -405,8 +405,22 @@ function mostrarProductos(lista) {
 </div>
 
 
-                    <div class="producto-talles">
 
+                    <div class="producto-talles">
+<div class="producto-talles-header">
+
+    <span>
+        TALLE ARG 🇦🇷
+    </span>
+
+    <button
+        type="button"
+        class="abrir-guia-talles"
+    >
+        📏 Guía de talles
+    </button>
+
+</div>
                         ${
                             tallesDisponibles.length > 0
 
@@ -2821,7 +2835,64 @@ escucharProductos(
     }
 );
 
+// ==========================================
+// GUÍA DE TALLES
+// ==========================================
 
+const guiaTallesOverlay =
+    document.getElementById("guia-talles-overlay");
+
+const cerrarGuiaTalles =
+    document.getElementById("cerrar-guia-talles");
+
+
+document.addEventListener("click", function(event) {
+
+    const botonGuia =
+        event.target.closest(".abrir-guia-talles");
+
+    if (botonGuia) {
+
+        guiaTallesOverlay.classList.add("activo");
+
+        document.body.style.overflow = "hidden";
+    }
+
+});
+
+
+if (cerrarGuiaTalles) {
+
+    cerrarGuiaTalles.addEventListener(
+        "click",
+        function() {
+
+            guiaTallesOverlay.classList.remove("activo");
+
+            document.body.style.overflow = "";
+        }
+    );
+
+}
+
+
+if (guiaTallesOverlay) {
+
+    guiaTallesOverlay.addEventListener(
+        "click",
+        function(event) {
+
+            if (event.target === guiaTallesOverlay) {
+
+                guiaTallesOverlay.classList.remove("activo");
+
+                document.body.style.overflow = "";
+            }
+
+        }
+    );
+
+}
 
 // ==========================================
 // INICIAR CARRITO
