@@ -2592,3 +2592,50 @@ footer {
     }
 
 }
+
+.whatsapp-flotante {
+    position: fixed !important;
+    right: 25px !important;
+    bottom: 25px !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    flex-direction: column;
+
+    background: #e10600 !important;
+    color: white !important;
+
+    padding: 13px 18px;
+    border-radius: 4px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+    transition: 0.2s;
+}
+
+.whatsapp-flotante span {
+    font-size: 10px;
+    opacity: 0.75;
+}
+
+.whatsapp-flotante strong {
+    font-size: 13px;
+}
+
+.whatsapp-flotante:hover {
+    background: white !important;
+    color: black !important;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+
+    .whatsapp-flotante {
+        right: 15px !important;
+        bottom: 15px !important;
+    }
+
+    .whatsapp-flotante span {
+        display: none;
+    }
+}
