@@ -387,9 +387,12 @@ function mostrarProductos(lista) {
     ${
         producto.disponibilidad === "encargo"
             ? `
-                <span class="disponibilidad-encargo">
-                    📦 POR ENCARGO
-                </span>
+                <button
+    type="button"
+    class="disponibilidad-encargo info-encargo"
+>
+    📦 POR ENCARGO ⓘ
+</button>
 
                 <small>
                     Disponible en depósito · Entrega estimada de 3 a 7 días
@@ -2893,6 +2896,54 @@ if (guiaTallesOverlay) {
     );
 
 }
+
+// ==========================================
+// INFORMACIÓN POR ENCARGO
+// ==========================================
+
+const modalEncargo =
+    document.getElementById("modal-encargo");
+
+const cerrarModalEncargo =
+    document.getElementById("cerrar-modal-encargo");
+
+
+document.addEventListener("click", function(event) {
+
+    if (event.target.closest(".info-encargo")) {
+
+        modalEncargo.classList.add("activo");
+
+        document.body.style.overflow = "hidden";
+    }
+
+});
+
+
+cerrarModalEncargo?.addEventListener(
+    "click",
+    function() {
+
+        modalEncargo.classList.remove("activo");
+
+        document.body.style.overflow = "";
+    }
+);
+
+
+modalEncargo?.addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === modalEncargo) {
+
+            modalEncargo.classList.remove("activo");
+
+            document.body.style.overflow = "";
+        }
+
+    }
+);
 
 // ==========================================
 // INICIAR CARRITO
