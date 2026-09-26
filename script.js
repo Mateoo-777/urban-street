@@ -2945,6 +2945,148 @@ modalEncargo?.addEventListener(
     }
 );
 
+
+// ==========================================
+// MODALES DEL FOOTER
+// ==========================================
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        // ABRIR
+
+        const enlace =
+            event.target.closest(".abrir-info");
+
+
+        if (enlace) {
+
+            event.preventDefault();
+
+
+            const modalId =
+                enlace.dataset.modal;
+
+
+            const modal =
+                document.getElementById(
+                    modalId
+                );
+
+
+            if (modal) {
+
+                modal.classList.add(
+                    "activo"
+                );
+
+                document.body.style.overflow =
+                    "hidden";
+
+            }
+
+        }
+
+
+        // CERRAR CON X
+
+        const botonCerrar =
+            event.target.closest(
+                ".cerrar-info"
+            );
+
+
+        if (botonCerrar) {
+
+            const modal =
+                botonCerrar.closest(
+                    ".info-overlay"
+                );
+
+
+            if (modal) {
+
+                modal.classList.remove(
+                    "activo"
+                );
+
+                document.body.style.overflow =
+                    "";
+
+            }
+
+        }
+
+    }
+);
+
+
+// ==========================================
+// CERRAR TOCANDO EL FONDO
+// ==========================================
+
+document
+    .querySelectorAll(".info-overlay")
+    .forEach(
+        function(modal) {
+
+            modal.addEventListener(
+                "click",
+                function(event) {
+
+                    if (
+                        event.target === modal
+                    ) {
+
+                        modal.classList.remove(
+                            "activo"
+                        );
+
+                        document.body.style.overflow =
+                            "";
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+// ==========================================
+// CERRAR CON ESC
+// ==========================================
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            document
+                .querySelectorAll(
+                    ".info-overlay.activo"
+                )
+                .forEach(
+                    function(modal) {
+
+                        modal.classList.remove(
+                            "activo"
+                        );
+
+                    }
+                );
+
+
+            document.body.style.overflow =
+                "";
+
+        }
+
+    }
+);
 // ==========================================
 // INICIAR CARRITO
 // ==========================================

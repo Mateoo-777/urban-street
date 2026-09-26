@@ -2639,3 +2639,166 @@ footer {
         display: none;
     }
 }
+
+/* =========================================
+   MODALES FOOTER
+========================================= */
+
+.info-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.88);
+
+    z-index: 100000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.2s;
+}
+
+.info-overlay.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-modal {
+    position: relative;
+
+    width: 100%;
+    max-width: 750px;
+    max-height: 88vh;
+
+    overflow-y: auto;
+
+    background: #101010;
+
+    border: 1px solid #333;
+    border-top: 3px solid #e10600;
+
+    padding: 40px;
+}
+
+.info-modal h2 {
+    font-size: clamp(30px, 5vw, 48px);
+
+    line-height: 0.95;
+
+    margin-bottom: 15px;
+}
+
+.cerrar-info {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #333;
+
+    background: transparent;
+    color: white;
+
+    font-size: 16px;
+}
+
+.cerrar-info:hover {
+    color: #e10600;
+    border-color: #e10600;
+}
+
+.info-fecha {
+    display: block;
+
+    color: #666;
+
+    font-size: 11px;
+
+    margin-bottom: 30px;
+}
+
+.info-contenido {
+    margin-top: 30px;
+}
+
+.info-contenido h3 {
+    color: white;
+
+    font-size: 15px;
+
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+.info-contenido h3:first-child {
+    margin-top: 0;
+}
+
+.info-contenido p {
+    color: #aaa;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+.info-aviso {
+    margin-top: 25px;
+
+    padding: 17px;
+
+    background: #181818;
+
+    border-left: 3px solid #e10600;
+
+    color: #bbb;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* SCROLL DEL MODAL */
+
+.info-modal::-webkit-scrollbar {
+    width: 7px;
+}
+
+.info-modal::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.info-modal::-webkit-scrollbar-thumb {
+    background: #e10600;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .info-overlay {
+        padding: 10px;
+    }
+
+    .info-modal {
+        padding: 35px 22px 25px;
+
+        max-height: 92vh;
+    }
+
+    .info-modal h2 {
+        padding-right: 35px;
+    }
+
+}

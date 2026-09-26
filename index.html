@@ -16,7 +16,7 @@
 
     <title>Urban Street | Sneakers & Streetwear</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
@@ -647,23 +647,35 @@
 
             <div class="footer-column">
 
-                <h3>AYUDA</h3>
+    <h3>AYUDA</h3>
 
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Envíos</a>
-                <a href="#">Cambios y devoluciones</a>
+    <a href="#" class="abrir-info" data-modal="modal-faq">
+        Preguntas frecuentes
+    </a>
 
-            </div>
+    <a href="#" class="abrir-info" data-modal="modal-envios">
+        Envíos
+    </a>
 
+    <a href="#" class="abrir-info" data-modal="modal-cambios">
+        Cambios y devoluciones
+    </a>
 
-            <div class="footer-column">
+</div>
 
-                <h3>LEGAL</h3>
+<div class="footer-column">
 
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Privacidad</a>
+    <h3>LEGAL</h3>
 
-            </div>
+    <a href="#" class="abrir-info" data-modal="modal-terminos">
+        Términos y condiciones
+    </a>
+
+    <a href="#" class="abrir-info" data-modal="modal-privacidad">
+        Privacidad
+    </a>
+
+</div>
 
 
             <div class="footer-column">
@@ -695,7 +707,465 @@
     </footer>
 
 
+<!-- ========================================
+     MODALES INFORMACIÓN FOOTER
+========================================= -->
 
+<!-- PREGUNTAS FRECUENTES -->
+
+<div id="modal-faq" class="info-overlay">
+
+    <div class="info-modal">
+
+        <button class="cerrar-info">✕</button>
+
+        <p class="section-small">AYUDA</p>
+
+        <h2>PREGUNTAS FRECUENTES</h2>
+
+        <div class="info-contenido">
+
+            <h3>¿Los productos son originales?</h3>
+
+            <p>
+                En Urban Street trabajamos con productos
+                seleccionados a través de nuestros proveedores.
+                La información de cada modelo y su disponibilidad
+                se encuentra indicada en su publicación.
+            </p>
+
+
+            <h3>¿Qué significa “Stock inmediato”?</h3>
+
+            <p>
+                Significa que el producto se encuentra disponible
+                para preparar su entrega o envío sin necesidad
+                de solicitarlo previamente.
+            </p>
+
+
+            <h3>¿Qué significa “Por encargo”?</h3>
+
+            <p>
+                Los productos identificados como “Por encargo”
+                se solicitan especialmente luego de realizada
+                la compra y confirmada su disponibilidad.
+                El tiempo estimado es de 3 a 7 días.
+            </p>
+
+
+            <h3>¿Cómo elijo mi talle?</h3>
+
+            <p>
+                Podés utilizar nuestra Guía de talles para consultar
+                la equivalencia entre talles argentinos y brasileños,
+                además de la medida aproximada del pie.
+            </p>
+
+
+            <h3>¿Qué pasa si no encuentro el modelo que quiero?</h3>
+
+            <p>
+                Utilizá la opción “Buscamos tu modelo” o escribinos
+                por WhatsApp indicando modelo y talle. Consultaremos
+                disponibilidad con nuestros proveedores.
+            </p>
+
+
+            <h3>¿Cómo puedo pagar?</h3>
+
+            <p>
+                Los medios de pago disponibles se muestran durante
+                la compra. Los pagos online se procesan mediante
+                Mercado Pago.
+            </p>
+
+
+            <h3>¿Realizan envíos?</h3>
+
+            <p>
+                Sí. Las opciones disponibles y el costo correspondiente
+                se informan antes de finalizar o coordinar el pedido.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ENVÍOS -->
+
+<div id="modal-envios" class="info-overlay">
+
+    <div class="info-modal">
+
+        <button class="cerrar-info">✕</button>
+
+        <p class="section-small">AYUDA</p>
+
+        <h2>ENVÍOS Y ENTREGAS</h2>
+
+        <div class="info-contenido">
+
+            <h3>Stock inmediato</h3>
+
+            <p>
+                Los productos identificados como “Stock inmediato”
+                se encuentran disponibles para preparar su entrega
+                o despacho.
+            </p>
+
+            <p>
+                Una vez confirmado el pago, comenzaremos con la
+                preparación del pedido.
+            </p>
+
+
+            <h3>Productos por encargo</h3>
+
+            <p>
+                Los productos identificados como “Por encargo”
+                deben ser solicitados previamente a nuestro proveedor.
+            </p>
+
+            <p>
+                El plazo estimado para que el producto esté disponible
+                es de 3 a 7 días. Puede variar dependiendo del modelo,
+                talle y disponibilidad.
+            </p>
+
+
+            <h3>Envíos</h3>
+
+            <p>
+                El costo y las opciones de envío serán informados
+                antes de finalizar o coordinar la operación.
+            </p>
+
+            <p>
+                El tiempo de transporte comienza una vez que el pedido
+                está listo y fue entregado al servicio encargado
+                del envío.
+            </p>
+
+
+            <h3>Datos de entrega</h3>
+
+            <p>
+                El comprador debe ingresar correctamente los datos
+                necesarios para realizar la entrega. Si detectás
+                algún error, comunicate con Urban Street lo antes posible.
+            </p>
+
+
+            <h3>Demoras</h3>
+
+            <p>
+                Pueden existir demoras ocasionadas por el transporte,
+                condiciones climáticas, alta demanda u otras situaciones
+                externas a Urban Street.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- CAMBIOS Y DEVOLUCIONES -->
+
+<div id="modal-cambios" class="info-overlay">
+
+    <div class="info-modal">
+
+        <button class="cerrar-info">✕</button>
+
+        <p class="section-small">AYUDA</p>
+
+        <h2>CAMBIOS Y DEVOLUCIONES</h2>
+
+        <div class="info-contenido">
+
+            <h3>Cambios</h3>
+
+            <p>
+                Si necesitás solicitar un cambio, comunicate con
+                Urban Street indicando tu número de pedido y el
+                motivo de la solicitud.
+            </p>
+
+            <p>
+                La disponibilidad de otro talle o modelo dependerá
+                del stock existente al momento de gestionar el cambio.
+            </p>
+
+
+            <h3>Producto incorrecto o con inconvenientes</h3>
+
+            <p>
+                Si recibiste un producto diferente al solicitado
+                o detectás algún inconveniente, comunicate con nosotros
+                indicando tu número de pedido y la información necesaria
+                para identificar el problema.
+            </p>
+
+
+            <h3>Derecho de arrepentimiento</h3>
+
+            <p>
+                En las compras realizadas a través del sitio,
+                el consumidor podrá ejercer el derecho de
+                arrepentimiento dentro del plazo establecido
+                por la legislación argentina aplicable.
+            </p>
+
+            <p>
+                Actualmente, el plazo general aplicable a las compras
+                a distancia es de 10 días corridos.
+            </p>
+
+            <div class="info-aviso">
+                Nada de esta política limita los derechos reconocidos
+                al consumidor por la legislación argentina vigente.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TÉRMINOS -->
+
+<div id="modal-terminos" class="info-overlay">
+
+    <div class="info-modal">
+
+        <button class="cerrar-info">✕</button>
+
+        <p class="section-small">LEGAL</p>
+
+        <h2>TÉRMINOS Y CONDICIONES</h2>
+
+        <span class="info-fecha">
+            Última actualización: septiembre de 2026
+        </span>
+
+        <div class="info-contenido">
+
+            <h3>1. Productos</h3>
+
+            <p>
+                Urban Street comercializa calzado y productos
+                relacionados publicados en el sitio.
+            </p>
+
+
+            <h3>2. Disponibilidad</h3>
+
+            <p>
+                Los productos pueden encontrarse identificados como
+                “Stock inmediato” o “Por encargo”.
+            </p>
+
+            <p>
+                Los productos por encargo están sujetos a disponibilidad
+                del proveedor.
+            </p>
+
+
+            <h3>3. Productos por encargo</h3>
+
+            <p>
+                Urban Street verificará y gestionará la disponibilidad
+                del producto con el proveedor correspondiente.
+                El plazo estimado informado es de 3 a 7 días.
+            </p>
+
+            <p>
+                Si el producto seleccionado no pudiera obtenerse,
+                Urban Street se comunicará con el comprador para
+                gestionar las alternativas que correspondan.
+            </p>
+
+
+            <h3>4. Precios</h3>
+
+            <p>
+                Los precios publicados se expresan en pesos argentinos
+                (ARS), salvo indicación expresa en contrario.
+            </p>
+
+
+            <h3>5. Pagos</h3>
+
+            <p>
+                Las formas de pago habilitadas se mostrarán durante
+                el proceso de compra. Los pagos realizados mediante
+                Mercado Pago son procesados a través de dicha plataforma.
+            </p>
+
+
+            <h3>6. Confirmación del pedido</h3>
+
+            <p>
+                La generación de un pedido no significa necesariamente
+                que el pago haya sido acreditado. Urban Street podrá
+                verificar la acreditación antes de preparar o entregar
+                el producto.
+            </p>
+
+
+            <h3>7. Envíos y entregas</h3>
+
+            <p>
+                Las modalidades, costos y condiciones aplicables serán
+                informadas durante la compra o coordinación de la entrega.
+            </p>
+
+
+            <h3>8. Cambios y devoluciones</h3>
+
+            <p>
+                Los cambios y devoluciones se gestionarán conforme
+                a nuestra política y a la legislación argentina vigente.
+            </p>
+
+
+            <h3>9. Derecho de arrepentimiento</h3>
+
+            <p>
+                Las compras realizadas a distancia se encuentran
+                alcanzadas por el derecho de arrepentimiento en los
+                casos previstos por la legislación vigente.
+            </p>
+
+
+            <h3>10. Datos del comprador</h3>
+
+            <p>
+                El comprador deberá proporcionar información correcta
+                y suficiente para procesar el pedido y realizar
+                la entrega.
+            </p>
+
+
+            <h3>11. Modificaciones</h3>
+
+            <p>
+                Estos términos podrán actualizarse cuando resulte
+                necesario, sin afectar los derechos correspondientes
+                a operaciones realizadas anteriormente.
+            </p>
+
+
+            <h3>12. Legislación aplicable</h3>
+
+            <p>
+                Las operaciones realizadas mediante Urban Street
+                se encuentran sujetas a la legislación aplicable
+                en la República Argentina.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PRIVACIDAD -->
+
+<div id="modal-privacidad" class="info-overlay">
+
+    <div class="info-modal">
+
+        <button class="cerrar-info">✕</button>
+
+        <p class="section-small">LEGAL</p>
+
+        <h2>POLÍTICA DE PRIVACIDAD</h2>
+
+        <span class="info-fecha">
+            Última actualización: septiembre de 2026
+        </span>
+
+        <div class="info-contenido">
+
+            <h3>¿Qué información podemos solicitar?</h3>
+
+            <p>
+                Para gestionar una compra podemos solicitar nombre
+                y apellido, correo electrónico, número de teléfono,
+                información necesaria para la entrega y datos
+                relacionados con el pedido.
+            </p>
+
+
+            <h3>¿Para qué utilizamos la información?</h3>
+
+            <p>
+                La utilizamos para procesar pedidos, coordinar entregas,
+                contactar al comprador, atender consultas y cumplir
+                las obligaciones relacionadas con las operaciones
+                realizadas.
+            </p>
+
+
+            <h3>Pagos</h3>
+
+            <p>
+                Urban Street no necesita almacenar los datos completos
+                de las tarjetas cuando los pagos son procesados
+                directamente por el proveedor de pagos correspondiente.
+            </p>
+
+
+            <h3>Protección de la información</h3>
+
+            <p>
+                Procuramos adoptar medidas razonables para proteger
+                la información personal y evitar accesos, usos
+                o divulgaciones no autorizadas.
+            </p>
+
+
+            <h3>Comunicación de datos</h3>
+
+            <p>
+                Los datos personales no serán vendidos. Podrán utilizarse
+                o comunicarse cuando resulte necesario para gestionar
+                una compra, procesar un pago, realizar una entrega
+                o cumplir una obligación legal.
+            </p>
+
+
+            <h3>Derechos sobre tus datos</h3>
+
+            <p>
+                El titular podrá ejercer los derechos que correspondan
+                conforme a la legislación argentina de protección
+                de datos personales.
+            </p>
+
+
+            <h3>Contacto</h3>
+
+            <p>
+                Para consultas relacionadas con privacidad o datos
+                personales, podés comunicarte con Urban Street mediante
+                los canales de contacto publicados en el sitio.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
     <!-- =========================
          FONDO DEL CARRITO
     ========================== -->
@@ -1122,7 +1592,7 @@
         Producto agregado al carrito ✓
     </div>
     
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js?v=3"></script>
 
 
 
