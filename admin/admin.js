@@ -819,61 +819,55 @@ formulario.addEventListener(
 
                 talles: {
 
-                    "39":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle39"
-                                )
-                                .value
-                        ),
+    "34": Number(
+        document.getElementById("talle34").value
+    ),
 
-                    "40":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle40"
-                                )
-                                .value
-                        ),
+    "35": Number(
+        document.getElementById("talle35").value
+    ),
 
-                    "41":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle41"
-                                )
-                                .value
-                        ),
+    "36": Number(
+        document.getElementById("talle36").value
+    ),
 
-                    "42":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle42"
-                                )
-                                .value
-                        ),
+    "37": Number(
+        document.getElementById("talle37").value
+    ),
 
-                    "43":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle43"
-                                )
-                                .value
-                        ),
+    "38": Number(
+        document.getElementById("talle38").value
+    ),
 
-                    "44":
-                        Number(
-                            document
-                                .getElementById(
-                                    "talle44"
-                                )
-                                .value
-                        )
+    "39": Number(
+        document.getElementById("talle39").value
+    ),
 
-                },
+    "40": Number(
+        document.getElementById("talle40").value
+    ),
+
+    "41": Number(
+        document.getElementById("talle41").value
+    ),
+
+    "42": Number(
+        document.getElementById("talle42").value
+    ),
+
+    "43": Number(
+        document.getElementById("talle43").value
+    ),
+
+    "44": Number(
+        document.getElementById("talle44").value
+    ),
+
+    "45": Number(
+        document.getElementById("talle45").value
+    )
+
+},
 
 
                 estado:
